@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Limitless Luxury Salon & Academy Ghaziabad</title>
+  <meta name="description" content="Learn about Limitless Luxury Salon & Academy in DLF Ankur Vihar, Loni, Ghaziabad – certified professionals, premium brands, bridal expertise." />
+  <meta name="keywords" content="salon in Ghaziabad, bridal makeup Ghaziabad, beauty academy Ghaziabad, hair treatment Ghaziabad" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { gold:'#C9A961', goldLight:'#E5C789', goldDark:'#9C8245', nude:'#F5EBE0', beige:'#E8DCC4', charcoal:'#1A1A1A' }, fontFamily: { serif:['Playfair Display','serif'], sans:['Poppins','sans-serif'] } } } }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family:'Poppins',sans-serif; background:#FFFDF9; color:#1A1A1A; }
+    h1,h2,h3,h4 { font-family:'Playfair Display',serif; }
+    .gold-gradient { background: linear-gradient(135deg,#C9A961,#E5C789,#9C8245); }
+    .text-gold-gradient { background: linear-gradient(135deg,#C9A961,#E5C789); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .btn-gold { background: linear-gradient(135deg,#C9A961,#9C8245); color:#1A1A1A; transition:all .3s; }
+    .btn-gold:hover { background: linear-gradient(135deg,#E5C789,#C9A961); box-shadow:0 10px 25px rgba(201,169,97,.4); transform:translateY(-2px); }
+    .divider { width:60px; height:2px; background:linear-gradient(90deg,transparent,#C9A961,transparent); margin:12px auto; }
+    .card-hover { transition:all .4s; }
+    .card-hover:hover { transform:translateY(-8px); box-shadow:0 20px 40px rgba(201,169,97,.2); }
+    .page-hero { background: linear-gradient(135deg, rgba(26,26,26,0.85), rgba(26,26,26,0.6)), url('https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=1600&auto=format') center/cover; }
+    .whatsapp-btn { box-shadow:0 8px 24px rgba(37,211,102,.4); animation:pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.08);} }
+    nav a.nav-link { position:relative; }
+    nav a.nav-link::after { content:''; position:absolute; bottom:-4px; left:50%; width:0; height:2px; background:#C9A961; transition:all .3s; transform:translateX(-50%); }
+    nav a.nav-link:hover::after, nav a.nav-link.active::after { width:100%; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+      <a href="index.html" class="flex flex-col leading-tight">
+        <span class="font-serif text-xl md:text-2xl font-bold text-charcoal">Limitless <span class="text-gold-gradient">Luxury</span></span>
+        <span class="text-[10px] tracking-[0.3em] text-gold uppercase">Salon & Academy</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="nav-link text-sm font-medium text-charcoal hover:text-gold">Home</a>
+        <a href="about.html" class="nav-link active text-sm font-medium text-charcoal hover:text-gold">About</a>
+        <a href="services.html" class="nav-link text-sm font-medium text-charcoal hover:text-gold">Services</a>
+        <a href="contact.html" class="nav-link text-sm font-medium text-charcoal hover:text-gold">Contact</a>
+        <a href="contact.html" class="btn-gold px-6 py-2.5 rounded-full text-sm font-semibold">Book Now</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-charcoal" aria-label="Menu">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gold/20">
+      <div class="px-6 py-4 space-y-3">
+        <a href="index.html" class="block py-2 text-charcoal font-medium">Home</a>
+        <a href="about.html" class="block py-2 text-charcoal font-medium">About</a>
+        <a href="services.html" class="block py-2 text-charcoal font-medium">Services</a>
+        <a href="contact.html" class="block py-2 text-charcoal font-medium">Contact</a>
+        <a href="contact.html" class="btn-gold block text-center py-3 rounded-full font-semibold">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero pt-32 pb-20 text-center text-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <p class="text-gold tracking-[0.4em] uppercase text-xs mb-4">Our Story</p>
+      <h1 class="font-serif text-4xl md:text-6xl font-bold mb-4">About <span class="text-gold-gradient italic">Us</span></h1>
+      <div class="divider"></div>
+      <p class="text-white/80 mt-4 max-w-2xl mx-auto">Your trusted destination for luxury beauty and professional training in Ghaziabad.</p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=800&auto=format" alt="Limitless Luxury Salon Interior Ghaziabad" class="rounded-2xl shadow-2xl w-full" />
+      </div>
+      <div>
+        <p class="text-gold tracking-[0.3em] text-xs uppercase">Welcome</p>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Limitless Luxury <span class="text-gold-gradient italic">Salon & Academy</span></h2>
+        <div class="w-16 h-0.5 bg-gold mb-6"></div>
+        <p class="text-charcoal/75 mb-4 leading-relaxed">Strategically located in DLF Ankur Vihar, Loni, Ghaziabad, Limitless Luxury Salon & Academy offers an unparalleled beauty experience. We blend artistry, skill, and premium products to deliver results that leave every client feeling confident, radiant, and truly pampered.</p>
+        <p class="text-charcoal/75 leading-relaxed">From stunning bridal makeovers to advanced skin treatments and professional training, we are committed to transforming beauty standards in Ghaziabad with uncompromised excellence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION / VISION -->
+  <section class="py-20 bg-nude/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+      <div class="card-hover bg-white p-10 rounded-2xl shadow-lg border-t-4 border-gold">
+        <div class="w-14 h-14 rounded-full gold-gradient flex items-center justify-center text-2xl mb-5">🎯</div>
+        <h3 class="font-serif text-2xl font-bold mb-3">Our Mission</h3>
+        <p class="text-charcoal/70 leading-relaxed">Transforming Beauty with Expertise. We aim to deliver world-class salon services and professional training, empowering every client and student with confidence, creativity, and impeccable quality.</p>
+      </div>
+      <div class="card-hover bg-white p-10 rounded-2xl shadow-lg border-t-4 border-gold">
+        <div class="w-14 h-14 rounded-full gold-gradient flex items-center justify-center text-2xl mb-5">✨</div>
+        <h3 class="font-serif text-2xl font-bold mb-3">Our Vision</h3>
+        <p class="text-charcoal/70 leading-relaxed">Empowering Beauty & Confidence. To become Ghaziabad's most trusted luxury salon and academy, setting the gold standard for beauty innovation, education, and client satisfaction.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-gold tracking-[0.3em] text-xs uppercase">Why Choose Us</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-2">The Limitless <span class="text-gold-gradient italic">Difference</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card-hover text-center p-8 rounded-2xl bg-nude/30 border border-gold/10">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-full gold-gradient flex items-center justify-center text-2xl">🏅</div>
+          <h3 class="font-serif text-xl font-bold mb-3">Certified Professionals</h3>
+          <p class="text-sm text-charcoal/70">Our team of licensed stylists and beauticians are trained to global standards for impeccable results.</p>
+        </div>
+        <div class="card-hover text-center p-8 rounded-2xl bg-nude/30 border border-gold/10">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-full gold-gradient flex items-center justify-center text-2xl">💎</div>
+          <h3 class="font-serif text-xl font-bold mb-3">Premium Brands</h3>
+          <p class="text-sm text-charcoal/70">We use only trusted, high-quality products including L'Oréal and Schwarzkopf.</p>
+        </div>
+        <div class="card-hover text-center p-8 rounded-2xl bg-nude/30 border border-gold/10">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-full gold-gradient flex items-center justify-center text-2xl">👰</div>
+          <h3 class="font-serif text-xl font-bold mb-3">Bridal Expertise</h3>
+          <p class="text-sm text-charcoal/70">Specialized bridal makeover packages designed to make your wedding day truly magical.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADDRESS / TIMING -->
+  <section class="py-20 bg-charcoal text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+      <div class="p-8 border border-gold/30 rounded-2xl">
+        <h3 class="font-serif text-2xl font-bold mb-4 text-gold-gradient">📍 Visit Our Salon</h3>
+        <p class="text-white/80 leading-relaxed">E-31, Shop No. 2, 60 ft. Road,<br>Near Royal Garden, SLF Ved Vihar,<br>Ghaziabad, Uttar Pradesh 201102</p>
+      </div>
+      <div class="p-8 border border-gold/30 rounded-2xl">
+        <h3 class="font-serif text-2xl font-bold mb-4 text-gold-gradient">🕒 Working Hours</h3>
+        <p class="text-white/80 leading-relaxed">Monday – Sunday<br>10:00 AM – 8:00 PM<br><span class="text-gold">Open All Days</span></p>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+      <a href="contact.html" class="btn-gold inline-block px-10 py-4 rounded-full font-semibold">Book Your Visit</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-white/80 pt-16 pb-8 border-t border-gold/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-10 mb-10">
+      <div>
+        <h3 class="font-serif text-2xl font-bold text-white mb-3">Limitless <span class="text-gold-gradient">Luxury</span></h3>
+        <p class="text-sm text-white/60 mb-4">Premium Salon & Beauty Academy in Ghaziabad. Where elegance meets expertise.</p>
+        <div class="flex gap-3">
+          <a href="https://instagram.com/makeoverbymeenukamat" target="_blank" class="w-9 h-9 rounded-full border border-gold/40 flex items-center justify-center hover:bg-gold hover:text-charcoal transition">📷</a>
+          <a href="https://wa.me/918700780088" target="_blank" class="w-9 h-9 rounded-full border border-gold/40 flex items-center justify-center hover:bg-gold hover:text-charcoal transition">💬</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4 tracking-wider">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-gold">Home</a></li>
+          <li><a href="about.html" class="hover:text-gold">About</a></li>
+          <li><a href="services.html" class="hover:text-gold">Services</a></li>
+          <li><a href="contact.html" class="hover:text-gold">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4 tracking-wider">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Bridal Makeup</li>
+          <li>Hair Treatments</li>
+          <li>Facials & Skincare</li>
+          <li>Beauty Academy</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4 tracking-wider">Contact</h4>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li>📍 E-31, Shop 2, 60 ft Road, SLF Ved Vihar, Ghaziabad</li>
+          <li>📞 +91 87007 80088</li>
+          <li>✉️ contact@limitlesssalon.com</li>
+          <li>🕒 Mon–Sun: 10 AM – 8 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 text-center text-xs text-white/50">
+      © 2025 Limitless Luxury Salon & Academy. All Rights Reserved. | Designed with ♥ in Ghaziabad
+    </div>
+  </footer>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/918700780088?text=Hi%20Limitless%20Luxury%20Salon" target="_blank" aria-label="WhatsApp" class="whatsapp-btn fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-green-500 flex items-center justify-center">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

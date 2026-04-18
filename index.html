@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Limitless Luxury Salon & Academy | Best Salon in Ghaziabad</title>
+  <meta name="description" content="Premium salon & beauty academy in Ghaziabad offering bridal makeup, hair treatments, facials & professional courses." />
+  <meta name="keywords" content="salon in Ghaziabad, bridal makeup Ghaziabad, beauty academy Ghaziabad, hair treatment Ghaziabad, facial salon Ghaziabad, makeup artist Loni" />
+  <meta name="author" content="Limitless Luxury Salon & Academy" />
+  <meta property="og:title" content="Limitless Luxury Salon & Academy | Best Salon in Ghaziabad" />
+  <meta property="og:description" content="Premium salon & beauty academy in Ghaziabad offering bridal makeup, hair treatments, facials & professional courses." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#C9A961',
+            goldLight: '#E5C789',
+            goldDark: '#9C8245',
+            nude: '#F5EBE0',
+            beige: '#E8DCC4',
+            charcoal: '#1A1A1A',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; background: #FFFDF9; color: #1A1A1A; }
+    h1,h2,h3,h4 { font-family: 'Playfair Display', serif; }
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(26,26,26,0.75) 0%, rgba(26,26,26,0.55) 100%), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&auto=format') center/cover no-repeat;
+    }
+    .gold-gradient { background: linear-gradient(135deg, #C9A961 0%, #E5C789 50%, #9C8245 100%); }
+    .text-gold-gradient { background: linear-gradient(135deg, #C9A961, #E5C789); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .card-hover { transition: all .4s ease; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(201,169,97,.2); }
+    .btn-gold { background: linear-gradient(135deg, #C9A961, #9C8245); color: #1A1A1A; transition: all .3s ease; }
+    .btn-gold:hover { background: linear-gradient(135deg, #E5C789, #C9A961); box-shadow: 0 10px 25px rgba(201,169,97,.4); transform: translateY(-2px); }
+    .btn-outline-gold { border: 2px solid #C9A961; color: #C9A961; transition: all .3s ease; }
+    .btn-outline-gold:hover { background: #C9A961; color: #1A1A1A; }
+    .divider { width: 60px; height: 2px; background: linear-gradient(90deg, transparent, #C9A961, transparent); margin: 12px auto; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: all .8s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .whatsapp-btn { box-shadow: 0 8px 24px rgba(37,211,102,.4); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.08);} }
+    .testimonial-card { background: linear-gradient(145deg, #fff, #faf6ee); }
+    nav a.nav-link { position: relative; }
+    nav a.nav-link::after { content: ''; position: absolute; bottom: -4px; left: 50%; width: 0; height: 2px; background: #C9A961; transition: all .3s ease; transform: translateX(-50%); }
+    nav a.nav-link:hover::after, nav a.nav-link.active::after { width: 100%; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+      <a href="index.html" class="flex flex-col leading-tight">
+        <span class="font-serif text-xl md:text-2xl font-bold text-charcoal">Limitless <span class="text-gold-gradient">Luxury</span></span>
+        <span class="text-[10px] tracking-[0.3em] text-gold uppercase">Salon & Academy</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="nav-link active text-sm font-medium text-charcoal hover:text-gold">Home</a>
+        <a href="about.html" class="nav-link text-sm font-medium text-charcoal hover:text-gold">About</a>
+        <a href="services.html" class="nav-link text-sm font-medium text-charcoal hover:text-gold">Services</a>
+        <a href="contact.html" class="nav-link text-sm font-medium text-charcoal hover:text-gold">Contact</a>
+        <a href="contact.html" class="btn-gold px-6 py-2.5 rounded-full text-sm font-semibold">Book Now</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-charcoal" aria-label="Menu">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gold/20">
+      <div class="px-6 py-4 space-y-3">
+        <a href="index.html" class="block py-2 text-charcoal font-medium">Home</a>
+        <a href="about.html" class="block py-2 text-charcoal font-medium">About</a>
+        <a href="services.html" class="block py-2 text-charcoal font-medium">Services</a>
+        <a href="contact.html" class="block py-2 text-charcoal font-medium">Contact</a>
+        <a href="contact.html" class="btn-gold block text-center py-3 rounded-full font-semibold">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg min-h-screen flex items-center pt-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+      <div class="max-w-3xl text-white">
+        <p class="text-gold text-sm tracking-[0.4em] uppercase mb-4 font-light">✦ Ghaziabad's Premium Beauty Destination ✦</p>
+        <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+          Elevate Your Look with <span class="text-gold-gradient italic">Limitless Luxury</span>
+        </h1>
+        <p class="text-lg md:text-xl text-white/90 mb-10 max-w-2xl leading-relaxed">
+          Experience world-class beauty treatments, certified bridal makeovers, and professional academy training in the heart of Ghaziabad.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="contact.html" class="btn-gold px-8 py-4 rounded-full font-semibold text-center">Book Appointment</a>
+          <a href="services.html" class="btn-outline-gold px-8 py-4 rounded-full font-semibold text-center">Enroll Now</a>
+        </div>
+        <div class="mt-12 flex flex-wrap gap-8 text-white/80">
+          <div><span class="block text-3xl font-serif text-gold-gradient font-bold">10+</span><span class="text-xs tracking-wider uppercase">Years Experience</span></div>
+          <div><span class="block text-3xl font-serif text-gold-gradient font-bold">5000+</span><span class="text-xs tracking-wider uppercase">Happy Clients</span></div>
+          <div><span class="block text-3xl font-serif text-gold-gradient font-bold">500+</span><span class="text-xs tracking-wider uppercase">Students Trained</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES HIGHLIGHTS -->
+  <section class="py-20 bg-nude/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 fade-in">
+        <p class="text-gold tracking-[0.3em] text-xs uppercase">Our Specialties</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-2">Signature <span class="text-gold-gradient italic">Services</span></h2>
+        <div class="divider"></div>
+        <p class="text-charcoal/70 max-w-2xl mx-auto mt-4">Indulge in our curated range of premium beauty services crafted to enhance your natural elegance.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card -->
+        <div class="card-hover bg-white rounded-2xl p-8 text-center border border-gold/10 fade-in">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-full gold-gradient flex items-center justify-center text-2xl">💍</div>
+          <h3 class="font-serif text-xl font-bold mb-3">Bridal Packages</h3>
+          <p class="text-sm text-charcoal/70 mb-4">Complete bridal makeovers that make your day unforgettable.</p>
+          <a href="services.html" class="text-gold text-sm font-semibold hover:text-goldDark">Explore →</a>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-8 text-center border border-gold/10 fade-in">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-full gold-gradient flex items-center justify-center text-2xl">💇‍♀️</div>
+          <h3 class="font-serif text-xl font-bold mb-3">Hair Styling</h3>
+          <p class="text-sm text-charcoal/70 mb-4">Keratin, smoothening, coloring & professional styling.</p>
+          <a href="services.html" class="text-gold text-sm font-semibold hover:text-goldDark">Explore →</a>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-8 text-center border border-gold/10 fade-in">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-full gold-gradient flex items-center justify-center text-2xl">✨</div>
+          <h3 class="font-serif text-xl font-bold mb-3">Facials & Waxing</h3>
+          <p class="text-sm text-charcoal/70 mb-4">Hydra facials, anti-ageing & smooth silky skin treatments.</p>
+          <a href="services.html" class="text-gold text-sm font-semibold hover:text-goldDark">Explore →</a>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-8 text-center border border-gold/10 fade-in">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-full gold-gradient flex items-center justify-center text-2xl">🎓</div>
+          <h3 class="font-serif text-xl font-bold mb-3">Beauty Academy</h3>
+          <p class="text-sm text-charcoal/70 mb-4">Professional courses in makeup, hair, skincare & bridal.</p>
+          <a href="services.html" class="text-gold text-sm font-semibold hover:text-goldDark">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div class="fade-in">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format" alt="Luxury Salon Interior in Ghaziabad" class="rounded-2xl shadow-2xl w-full" />
+      </div>
+      <div class="fade-in">
+        <p class="text-gold tracking-[0.3em] text-xs uppercase">About Us</p>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Where Beauty Meets <span class="text-gold-gradient italic">Expertise</span></h2>
+        <div class="w-16 h-0.5 bg-gold mb-6"></div>
+        <p class="text-charcoal/75 mb-5 leading-relaxed">Strategically located in DLF Ankur Vihar, Loni, Ghaziabad, Limitless Luxury Salon & Academy offers an unparalleled beauty experience with certified professionals and premium products.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-center gap-3"><span class="text-gold text-xl">✓</span> Certified Beauty Professionals</li>
+          <li class="flex items-center gap-3"><span class="text-gold text-xl">✓</span> Premium Brands – L'Oréal, Schwarzkopf</li>
+          <li class="flex items-center gap-3"><span class="text-gold text-xl">✓</span> Expert Bridal Makeover Team</li>
+        </ul>
+        <a href="about.html" class="btn-gold inline-block px-8 py-3 rounded-full font-semibold">Discover More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE AFTER GALLERY -->
+  <section class="py-20 bg-charcoal text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 fade-in">
+        <p class="text-gold tracking-[0.3em] text-xs uppercase">Transformations</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-2">Before & <span class="text-gold-gradient italic">After</span></h2>
+        <div class="divider"></div>
+        <p class="text-white/70 max-w-2xl mx-auto mt-4">Real transformations. Real confidence.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="card-hover relative rounded-xl overflow-hidden aspect-[3/4] group">
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=500&auto=format" alt="Bridal Makeup Transformation" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-70"></div>
+          <span class="absolute bottom-4 left-4 text-sm font-semibold text-gold">Bridal Look</span>
+        </div>
+        <div class="card-hover relative rounded-xl overflow-hidden aspect-[3/4]">
+          <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500&auto=format" alt="Hair Styling Transformation" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-70"></div>
+          <span class="absolute bottom-4 left-4 text-sm font-semibold text-gold">Hair Color</span>
+        </div>
+        <div class="card-hover relative rounded-xl overflow-hidden aspect-[3/4]">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=500&auto=format" alt="Facial Glow Result" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-70"></div>
+          <span class="absolute bottom-4 left-4 text-sm font-semibold text-gold">Hydra Facial</span>
+        </div>
+        <div class="card-hover relative rounded-xl overflow-hidden aspect-[3/4]">
+          <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=500&auto=format" alt="Makeup Transformation" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-70"></div>
+          <span class="absolute bottom-4 left-4 text-sm font-semibold text-gold">Party Makeup</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-20 bg-nude/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 fade-in">
+        <p class="text-gold tracking-[0.3em] text-xs uppercase">Testimonials</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-2">Words of <span class="text-gold-gradient italic">Praise</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="testimonial-card rounded-2xl p-8 shadow-lg card-hover fade-in">
+          <div class="text-gold text-3xl mb-3">"</div>
+          <p class="text-charcoal/80 mb-6 italic">Absolutely stunning bridal makeover! Meenu and her team made my wedding day unforgettable. Highly recommended!</p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full gold-gradient flex items-center justify-center font-bold text-charcoal">P</div>
+            <div><h4 class="font-semibold">Priya Sharma</h4><span class="text-xs text-gold">Bride • Ghaziabad</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card rounded-2xl p-8 shadow-lg card-hover fade-in">
+          <div class="text-gold text-3xl mb-3">"</div>
+          <p class="text-charcoal/80 mb-6 italic">The Hydra Facial here is amazing – my skin has never felt this fresh. Luxury experience at fair prices.</p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full gold-gradient flex items-center justify-center font-bold text-charcoal">N</div>
+            <div><h4 class="font-semibold">Neha Gupta</h4><span class="text-xs text-gold">Regular Client</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card rounded-2xl p-8 shadow-lg card-hover fade-in">
+          <div class="text-gold text-3xl mb-3">"</div>
+          <p class="text-charcoal/80 mb-6 italic">Took their advanced makeup course – world class teaching! I'm now a confident freelance artist.</p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full gold-gradient flex items-center justify-center font-bold text-charcoal">R</div>
+            <div><h4 class="font-semibold">Riya Singh</h4><span class="text-xs text-gold">Academy Graduate</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFER BANNER -->
+  <section class="py-16 gold-gradient relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-charcoal">
+      <p class="tracking-[0.4em] text-xs uppercase mb-3 font-semibold">Limited Time Offer</p>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">Get <span class="italic">10% OFF</span> Hydra Facial & Body Polishing</h2>
+      <p class="mb-8 text-charcoal/80 max-w-xl mx-auto">Pamper yourself with our luxury skin-reviving treatments at a special price. Book now and glow!</p>
+      <a href="contact.html" class="inline-block bg-charcoal text-gold px-10 py-4 rounded-full font-semibold hover:bg-black transition">Claim Offer</a>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM CTA -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+      <p class="text-gold tracking-[0.3em] text-xs uppercase">Follow Us</p>
+      <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Join Us on <span class="text-gold-gradient italic">Instagram</span></h2>
+      <div class="divider"></div>
+      <p class="text-charcoal/70 mb-6 mt-4">See our latest transformations, behind-the-scenes moments & beauty tips.</p>
+      <a href="https://instagram.com/makeoverbymeenukamat" target="_blank" rel="noopener" class="inline-flex items-center gap-3 btn-gold px-8 py-4 rounded-full font-semibold">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        @makeoverbymeenukamat
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-white/80 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-10 mb-10">
+      <div>
+        <h3 class="font-serif text-2xl font-bold text-white mb-3">Limitless <span class="text-gold-gradient">Luxury</span></h3>
+        <p class="text-sm text-white/60 mb-4">Premium Salon & Beauty Academy in Ghaziabad. Where elegance meets expertise.</p>
+        <div class="flex gap-3">
+          <a href="https://instagram.com/makeoverbymeenukamat" target="_blank" class="w-9 h-9 rounded-full border border-gold/40 flex items-center justify-center hover:bg-gold hover:text-charcoal transition">📷</a>
+          <a href="https://wa.me/918700780088" target="_blank" class="w-9 h-9 rounded-full border border-gold/40 flex items-center justify-center hover:bg-gold hover:text-charcoal transition">💬</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4 tracking-wider">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-gold">Home</a></li>
+          <li><a href="about.html" class="hover:text-gold">About</a></li>
+          <li><a href="services.html" class="hover:text-gold">Services</a></li>
+          <li><a href="contact.html" class="hover:text-gold">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4 tracking-wider">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Bridal Makeup</li>
+          <li>Hair Treatments</li>
+          <li>Facials & Skincare</li>
+          <li>Beauty Academy</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4 tracking-wider">Contact</h4>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li>📍 E-31, Shop 2, 60 ft Road, SLF Ved Vihar, Ghaziabad</li>
+          <li>📞 +91 87007 80088</li>
+          <li>✉️ contact@limitlesssalon.com</li>
+          <li>🕒 Mon–Sun: 10 AM – 8 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 text-center text-xs text-white/50">
+      © 2025 Limitless Luxury Salon & Academy. All Rights Reserved. | Designed with ♥ in Ghaziabad
+    </div>
+  </footer>
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/918700780088?text=Hi%20Limitless%20Luxury%20Salon,%20I%27d%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener" aria-label="WhatsApp" class="whatsapp-btn fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-green-500 flex items-center justify-center">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Scroll navbar
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) nav.classList.add('shadow-lg');
+      else nav.classList.remove('shadow-lg');
+    });
+
+    // Fade in on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Limitless Luxury Salon Ghaziabad – Book Appointment</title>
+  <meta name="description" content="Contact Limitless Luxury Salon & Academy in Ghaziabad. Book appointments, enroll in beauty courses or visit us at SLF Ved Vihar." />
+  <meta name="keywords" content="salon in Ghaziabad, book appointment salon, bridal makeup Ghaziabad, beauty academy contact" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { gold:'#C9A961', goldLight:'#E5C789', goldDark:'#9C8245', nude:'#F5EBE0', beige:'#E8DCC4', charcoal:'#1A1A1A' }, fontFamily: { serif:['Playfair Display','serif'], sans:['Poppins','sans-serif'] } } } }
+  </script>
+  <style>
+    html { scroll-behavior:smooth; }
+    body { font-family:'Poppins',sans-serif; background:#FFFDF9; color:#1A1A1A; }
+    h1,h2,h3,h4 { font-family:'Playfair Display',serif; }
+    .gold-gradient { background: linear-gradient(135deg,#C9A961,#E5C789,#9C8245); }
+    .text-gold-gradient { background: linear-gradient(135deg,#C9A961,#E5C789); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .btn-gold { background: linear-gradient(135deg,#C9A961,#9C8245); color:#1A1A1A; transition:all .3s; }
+    .btn-gold:hover { background: linear-gradient(135deg,#E5C789,#C9A961); box-shadow:0 10px 25px rgba(201,169,97,.4); transform:translateY(-2px); }
+    .divider { width:60px; height:2px; background:linear-gradient(90deg,transparent,#C9A961,transparent); margin:12px auto; }
+    .card-hover { transition:all .4s; }
+    .card-hover:hover { transform:translateY(-5px); box-shadow:0 20px 40px rgba(201,169,97,.15); }
+    .page-hero { background: linear-gradient(135deg, rgba(26,26,26,0.85), rgba(26,26,26,0.6)), url('https://images.unsplash.com/photo-1571875257727-256c39da42af?w=1600&auto=format') center/cover; }
+    .whatsapp-btn { box-shadow:0 8px 24px rgba(37,211,102,.4); animation:pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.08);} }
+    .form-input { width:100%; padding:14px 18px; border:1px solid #E8DCC4; border-radius:12px; background:#FFFDF9; transition:all .3s; font-size:15px; }
+    .form-input:focus { outline:none; border-color:#C9A961; box-shadow:0 0 0 3px rgba(201,169,97,.15); }
+    .form-input.error { border-color:#ef4444; background:#fef2f2; }
+    .error-msg { color:#ef4444; font-size:12px; margin-top:4px; display:none; }
+    .error-msg.show { display:block; }
+    nav a.nav-link { position:relative; }
+    nav a.nav-link::after { content:''; position:absolute; bottom:-4px; left:50%; width:0; height:2px; background:#C9A961; transition:all .3s; transform:translateX(-50%); }
+    nav a.nav-link:hover::after, nav a.nav-link.active::after { width:100%; }
+    .toast { position:fixed; top:100px; right:20px; background:#1A1A1A; color:#C9A961; padding:16px 24px; border-radius:12px; border:1px solid #C9A961; box-shadow:0 10px 30px rgba(0,0,0,.2); z-index:100; transform:translateX(120%); transition:transform .4s; }
+    .toast.show { transform:translateX(0); }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+      <a href="index.html" class="flex flex-col leading-tight">
+        <span class="font-serif text-xl md:text-2xl font-bold text-charcoal">Limitless <span class="text-gold-gradient">Luxury</span></span>
+        <span class="text-[10px] tracking-[0.3em] text-gold uppercase">Salon & Academy</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="nav-link text-sm font-medium text-charcoal hover:text-gold">Home</a>
+        <a href="about.html" class="nav-link text-sm font-medium text-charcoal hover:text-gold">About</a>
+        <a href="services.html" class="nav-link text-sm font-medium text-charcoal hover:text-gold">Services</a>
+        <a href="contact.html" class="nav-link active text-sm font-medium text-charcoal hover:text-gold">Contact</a>
+        <a href="#contactForm" class="btn-gold px-6 py-2.5 rounded-full text-sm font-semibold">Book Now</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-charcoal"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gold/20">
+      <div class="px-6 py-4 space-y-3">
+        <a href="index.html" class="block py-2 text-charcoal font-medium">Home</a>
+        <a href="about.html" class="block py-2 text-charcoal font-medium">About</a>
+        <a href="services.html" class="block py-2 text-charcoal font-medium">Services</a>
+        <a href="contact.html" class="block py-2 text-charcoal font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero pt-32 pb-20 text-center text-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <p class="text-gold tracking-[0.4em] uppercase text-xs mb-4">Get In Touch</p>
+      <h1 class="font-serif text-4xl md:text-6xl font-bold mb-4">Contact <span class="text-gold-gradient italic">Us</span></h1>
+      <div class="divider"></div>
+      <p class="text-white/80 mt-4 max-w-2xl mx-auto">Book your appointment or learn more about our academy. We're here to make you shine.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO CARDS -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-6">
+      <div class="card-hover text-center p-8 rounded-2xl bg-nude/40 border border-gold/10">
+        <div class="w-14 h-14 mx-auto rounded-full gold-gradient flex items-center justify-center text-xl mb-4">📞</div>
+        <h3 class="font-serif text-lg font-bold mb-2">Call Us</h3>
+        <a href="tel:+918700780088" class="text-charcoal/70 text-sm hover:text-gold">+91 87007 80088</a>
+      </div>
+      <div class="card-hover text-center p-8 rounded-2xl bg-nude/40 border border-gold/10">
+        <div class="w-14 h-14 mx-auto rounded-full gold-gradient flex items-center justify-center text-xl mb-4">✉️</div>
+        <h3 class="font-serif text-lg font-bold mb-2">Email Us</h3>
+        <a href="mailto:contact@limitlesssalon.com" class="text-charcoal/70 text-sm hover:text-gold break-words">contact@limitlesssalon.com</a>
+      </div>
+      <div class="card-hover text-center p-8 rounded-2xl bg-nude/40 border border-gold/10">
+        <div class="w-14 h-14 mx-auto rounded-full gold-gradient flex items-center justify-center text-xl mb-4">📍</div>
+        <h3 class="font-serif text-lg font-bold mb-2">Visit Us</h3>
+        <p class="text-charcoal/70 text-sm">E-31, Shop 2, 60 ft Road, SLF Ved Vihar, Ghaziabad 201102</p>
+      </div>
+      <div class="card-hover text-center p-8 rounded-2xl bg-nude/40 border border-gold/10">
+        <div class="w-14 h-14 mx-auto rounded-full gold-gradient flex items-center justify-center text-xl mb-4">🕒</div>
+        <h3 class="font-serif text-lg font-bold mb-2">Hours</h3>
+        <p class="text-charcoal/70 text-sm">Mon – Sun<br>10 AM – 8 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM + MAP -->
+  <section class="py-20 bg-nude/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10">
+      <!-- FORM -->
+      <div id="contactForm" class="bg-white rounded-2xl shadow-xl p-8 md:p-10 border border-gold/10">
+        <p class="text-gold tracking-[0.3em] text-xs uppercase">Send Message</p>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-2">Let's <span class="text-gold-gradient italic">Talk Beauty</span></h2>
+        <div class="w-16 h-0.5 bg-gold mb-6"></div>
+        <form id="messageForm" novalidate>
+          <div class="mb-5">
+            <label class="block text-sm font-medium mb-2">Full Name *</label>
+            <input type="text" id="name" class="form-input" placeholder="Your Name" />
+            <span class="error-msg" data-for="name">Please enter your name</span>
+          </div>
+          <div class="mb-5">
+            <label class="block text-sm font-medium mb-2">Email Address *</label>
+            <input type="email" id="email" class="form-input" placeholder="you@example.com" />
+            <span class="error-msg" data-for="email">Please enter a valid email</span>
+          </div>
+          <div class="mb-5">
+            <label class="block text-sm font-medium mb-2">Subject *</label>
+            <input type="text" id="subject" class="form-input" placeholder="Booking / Enquiry / Course" />
+            <span class="error-msg" data-for="subject">Please enter a subject</span>
+          </div>
+          <div class="mb-6">
+            <label class="block text-sm font-medium mb-2">Message *</label>
+            <textarea id="message" rows="5" class="form-input resize-none" placeholder="Tell us how we can help you..."></textarea>
+            <span class="error-msg" data-for="message">Please write a message (min 10 characters)</span>
+          </div>
+          <button type="submit" class="btn-gold w-full py-4 rounded-full font-semibold text-base">Send Message</button>
+        </form>
+      </div>
+
+      <!-- MAP + CTA -->
+      <div class="flex flex-col gap-6">
+        <div class="rounded-2xl overflow-hidden shadow-xl border border-gold/10 h-80 lg:h-auto lg:flex-1">
+          <iframe src="https://www.google.com/maps?q=SLF+Ved+Vihar+Ghaziabad&output=embed" class="w-full h-full min-h-[320px]" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Limitless Luxury Salon Location"></iframe>
+        </div>
+        <div class="gold-gradient rounded-2xl p-8 text-charcoal">
+          <h3 class="font-serif text-2xl font-bold mb-2">Quick WhatsApp Booking</h3>
+          <p class="text-charcoal/80 text-sm mb-5">Reach us instantly on WhatsApp for fast appointment booking.</p>
+          <a href="https://wa.me/918700780088?text=Hi!%20I'd%20like%20to%20book%20an%20appointment" target="_blank" class="inline-block bg-charcoal text-gold px-8 py-3 rounded-full font-semibold hover:bg-black transition">💬 Chat Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-white/80 pt-16 pb-8 border-t border-gold/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-10 mb-10">
+      <div>
+        <h3 class="font-serif text-2xl font-bold text-white mb-3">Limitless <span class="text-gold-gradient">Luxury</span></h3>
+        <p class="text-sm text-white/60 mb-4">Premium Salon & Beauty Academy in Ghaziabad. Where elegance meets expertise.</p>
+        <div class="flex gap-3">
+          <a href="https://instagram.com/makeoverbymeenukamat" target="_blank" class="w-9 h-9 rounded-full border border-gold/40 flex items-center justify-center hover:bg-gold hover:text-charcoal transition">📷</a>
+          <a href="https://wa.me/918700780088" target="_blank" class="w-9 h-9 rounded-full border border-gold/40 flex items-center justify-center hover:bg-gold hover:text-charcoal transition">💬</a>
+        </div>
+      </div>
+      <div><h4 class="font-semibold text-white mb-4 tracking-wider">Quick Links</h4><ul class="space-y-2 text-sm"><li><a href="index.html" class="hover:text-gold">Home</a></li><li><a href="about.html" class="hover:text-gold">About</a></li><li><a href="services.html" class="hover:text-gold">Services</a></li><li><a href="contact.html" class="hover:text-gold">Contact</a></li></ul></div>
+      <div><h4 class="font-semibold text-white mb-4 tracking-wider">Services</h4><ul class="space-y-2 text-sm"><li>Bridal Makeup</li><li>Hair Treatments</li><li>Facials & Skincare</li><li>Beauty Academy</li></ul></div>
+      <div><h4 class="font-semibold text-white mb-4 tracking-wider">Contact</h4><ul class="space-y-2 text-sm text-white/70"><li>📍 E-31, Shop 2, 60 ft Road, SLF Ved Vihar, Ghaziabad</li><li>📞 +91 87007 80088</li><li>✉️ contact@limitlesssalon.com</li><li>🕒 Mon–Sun: 10 AM – 8 PM</li></ul></div>
+    </div>
+    <div class="border-t border-white/10 pt-6 text-center text-xs text-white/50">© 2025 Limitless Luxury Salon & Academy. All Rights Reserved. | Designed with ♥ in Ghaziabad</div>
+  </footer>
+
+  <a href="https://wa.me/918700780088" target="_blank" class="whatsapp-btn fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-green-500 flex items-center justify-center" aria-label="WhatsApp">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+  </a>
+
+  <!-- Toast -->
+  <div id="toast" class="toast">✅ Message sent successfully!</div>
+
+  <script>
+    // Mobile menu
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    // Form validation
+    const form = document.getElementById('messageForm');
+    const toast = document.getElementById('toast');
+
+    function showError(id, show) {
+      const input = document.getElementById(id);
+      const err = document.querySelector(`.error-msg[data-for="${id}"]`);
+      if (show) { input.classList.add('error'); err.classList.add('show'); }
+      else { input.classList.remove('error'); err.classList.remove('show'); }
+    }
+
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+      let valid = true;
+
+      showError('name', !name); if (!name) valid = false;
+      showError('email', !validateEmail(email)); if (!validateEmail(email)) valid = false;
+      showError('subject', !subject); if (!subject) valid = false;
+      showError('message', message.length < 10); if (message.length < 10) valid = false;
+
+      if (valid) {
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3500);
+        form.reset();
+      }
+    });
+
+    // Live clear errors
+    ['name','email','subject','message'].forEach(id => {
+      document.getElementById(id).addEventListener('input', () => showError(id, false));
+    });
+  </script>
+</body>
+</html>
